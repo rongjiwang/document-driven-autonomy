@@ -34,10 +34,13 @@ Example shape:
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo rongjiwang/document-driven-autonomy \
-  --path .
+  --path . \
+  --name document-driven-autonomy
 ```
 
 After installation, restart Codex so the skill is discovered.
+
+The explicit `--name document-driven-autonomy` is important here because this repo stores the skill at the repository root. Without `--name`, some installer flows may treat `.` as the destination name and fail validation.
 
 ## Usage
 

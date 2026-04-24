@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document-Driven Autonomy"
+  short_description: "Autonomous execution from repo docs"
+  default_prompt: "Use $document-driven-autonomy to continue implementation from the repo governance and planning docs."

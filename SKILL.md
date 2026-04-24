@@ -219,6 +219,10 @@ Use the execution behavior in [references/execution-loop.md](references/executio
 
 Use the blocker and checkpoint guidance in [references/autonomy-governance.md](references/autonomy-governance.md) to keep autonomous sessions stable.
 
+Use [references/examples.md](references/examples.md) to check trigger boundaries and expected behavior.
+
+Use [references/forward-testing.md](references/forward-testing.md) to evaluate whether the skill is ready for broader publication.
+
 ## Output Expectations
 
 At the start of autonomous execution, briefly state:

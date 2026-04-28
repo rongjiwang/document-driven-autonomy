@@ -40,7 +40,7 @@ The explicit `--name document-driven-autonomy` is important because this reposit
 Then invoke it explicitly:
 
 ```text
-Use $document-driven-autonomy to continue implementation from the repo governance and planning docs.
+Use $document-driven-autonomy to assess whether this repo is ready for long autonomous execution from its governance and planning docs.
 ```
 
 ## Expected Behavior

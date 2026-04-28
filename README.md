@@ -43,6 +43,48 @@ Then invoke it explicitly:
 Use $document-driven-autonomy to assess whether this repo is ready for long autonomous execution from its governance and planning docs.
 ```
 
+## Prompt Sequence
+
+Use this sequence when applying the skill to a repo that is not already fully prepared for document-driven autonomy.
+
+### 1. Inspect only
+
+```text
+Use $document-driven-autonomy to inspect this repo for autonomous execution readiness. Map any existing docs to these roles: operating rules, target architecture, active implementation plan, eval criteria, and decision log. Do not edit files. Report what is present, missing, stale, or contradictory.
+```
+
+### 2. Propose the minimum document pack
+
+```text
+Use $document-driven-autonomy to propose the minimum document pack needed to make this repo ready for future autonomous execution. Ground the proposal in the current codebase and existing docs. Do not edit files yet.
+```
+
+### 3. Create missing docs
+
+```text
+Use $document-driven-autonomy to create the approved minimal document pack for this repo: operating rules, target architecture, active implementation plan, eval criteria, and decision log. Keep the docs concise, factual, and aligned with the existing codebase. Do not start implementation work.
+```
+
+### 4. Validate readiness
+
+```text
+Use $document-driven-autonomy to assess whether the repo is now ready for autonomous execution. Confirm that the docs agree, the active milestone has a clear next task, eval criteria are runnable, and the decision log captures current constraints. Do not edit files unless a narrow doc repair is required.
+```
+
+### 5. Run one safe task
+
+```text
+Use $document-driven-autonomy to resume from the repo docs. Identify the active milestone, the next unfinished task, and the verification you expect to run. Complete only that task, run verification, update the plan/checkpoint docs, and stop with the next task clearly stated.
+```
+
+### 6. Continue until blocked
+
+```text
+Use $document-driven-autonomy to proceed autonomously from the repo docs until blocked or until the current milestone is complete. Follow the implementation plan order, keep changes aligned with the architecture and decision log, run task-level verification for every completed task, and create concise checkpoints as you go.
+```
+
+Best practice: run steps 1-5 the first time on a repo. Use step 6 only after the skill has completed one clean task successfully.
+
 ## Expected Behavior
 
 At startup, the skill should:
